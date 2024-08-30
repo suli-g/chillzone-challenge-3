@@ -18,9 +18,6 @@ from main import (
 def test_callable_ints_are_callable():
     """
     Tests that numbers are callable.
-
-    Fixtures:
-    - numbers
     """
 
     assert one() == 1
@@ -31,9 +28,6 @@ def test_callable_ints_are_callable():
 def test_operations_work_on_ints():
     """
     Tests that operations are callable directly on int values.
-
-    Fixtures:
-    - operations
     """
 
     assert plus(1)(2) == 3
@@ -43,10 +37,6 @@ def test_operations_work_on_ints():
 def test_operations_work_on_numbers():
     """
     Tests that operations are callable on numbers.
-
-    Fixtures:
-    - operations
-    - numbers
     """
 
     assert one(plus(four())) == 5
@@ -56,10 +46,6 @@ def test_operations_work_on_numbers():
 def test_division_returns_integer():
     """
     Tests that operations are callable on numbers.
-
-    Fixtures:
-    - operations
-    - numbers
     """
 
     assert four(divided_by(seven())) == 0
@@ -67,6 +53,9 @@ def test_division_returns_integer():
 
 
 def test_works_with_challenge_test_cases():
+    """
+    Tests that the challenge test cases work.
+    """
     assert seven(times(five())) == 35
     assert four(plus(nine())) == 13
     assert eight(minus(three())) == 5
