@@ -1,4 +1,18 @@
-from main import one, four, seven, plus, minus, divided_by
+from main import (
+    one,
+    two,
+    three,
+    four,
+    five,
+    six,
+    seven,
+    eight,
+    nine,
+    plus,
+    minus,
+    divided_by,
+    times,
+)
 
 
 def test_callable_ints_are_callable():
@@ -50,3 +64,10 @@ def test_division_returns_integer():
 
     assert four(divided_by(seven())) == 0
     assert seven(divided_by(four())) == 1
+
+
+def test_works_with_challenge_test_cases():
+    assert seven(times(five())) == 35
+    assert four(plus(nine())) == 13
+    assert eight(minus(three())) == 5
+    assert six(divided_by(two())) == 3
