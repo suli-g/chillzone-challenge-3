@@ -114,7 +114,7 @@ This project has been implemented using [Poetry](https://python-poetry.org/) and
     pip install poetry
     ```
 
-3. Format the code (using Ruff).
+3. Check code style and format (using [Ruff](https://docs.astral.sh/ruff/tutorial/)).
 
     ```sh
     ruff check --fix
