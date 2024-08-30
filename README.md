@@ -24,6 +24,12 @@ For example, this should return `2`, not `2.666666...`:
 eight(dividedBy(three()));
 ```
 
+## Running the Project
+
+```
+python 
+```
+
 ## Types
 
 The following types have been defined:
