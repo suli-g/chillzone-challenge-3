@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "challenge3"
+version = "0.1.0"
+description = "This package was created as a solution to ChillZone challenge 3."
+authors = ["Sulaiman Gafoor <5022721+suli-g@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+ruff = "^0.6.3"
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "src"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
